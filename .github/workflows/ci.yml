@@ -1,5 +1,11 @@
 name: Default-workflow
-on: push
+on:
+  # Trigger on every pull request and on push
+  # to the master branch.
+  pull_request:
+  push:
+    branches:
+      - master
 jobs:
   test:
     name: Run unit tests
