@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_black">#333333</color>
+    <color name="black">#000000</color>
+    <color name="brand_white">#FFFFFFFF</color>
+    <color name="light_black">#1E1E1E</color>
+    <color name="dirty_white">#F9FDFB</color>
+    <color name="brand_purple">#8300e9</color>
+    <color name="brand_light_purple">#808300e9</color>
+    <color name="brand_green">#7cda24</color>
+    <color name="dark_red">#CD3232</color>
+</resources>

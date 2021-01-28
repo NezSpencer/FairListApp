@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gutter_margin">25dp</dimen>
+    <dimen name="inter_view_margin">16dp</dimen>
+    <dimen name="intra_view_margin">8dp</dimen>
+    <dimen name="cell_margin">4dp</dimen>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/inter_view_margin"
+        android:paddingStart="@dimen/inter_view_margin"
+        android:paddingEnd="@dimen/inter_view_margin">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/intra_view_margin"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_title"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/bodyText.Bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/inter_view_margin"
+            android:layout_marginTop="@dimen/intra_view_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="John DOe" />
+
+        <TextView
+            android:id="@+id/tv_employment_type"
+            style="@style/captionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cell_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="Remote" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            style="@style/captionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cell_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_employment_type"
+            tools:text="Manchester, UK" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/captionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cell_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_location"
+            tools:text="January 25, 2021" />
+
+        <TextView
+            android:id="@+id/tv_job_url"
+            style="@style/captionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/intra_view_margin"
+            android:autoLink="web"
+            app:layout_constraintEnd_toEndOf="@id/tv_title"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_date"
+            tools:text="12 adhdjdj avenue Lajdbso" />
+
+        <TextView
+            android:id="@+id/tv_job_description"
+            style="@style/bodyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inter_view_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_url"
+            tools:text="This is a description" />
+
+        <TextView
+            android:id="@+id/tv_how_to_apply"
+            style="@style/bodyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inter_view_margin"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_job_description"
+            tools:text="Apply like this" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
